@@ -9,7 +9,7 @@ input.addEventListener("change", async () => {
       `https://api.weatherapi.com/v1/current.json?key=0c80b2b56f1943ada19100744230103&q=${inputValue}&aqi=no`
     );
     const res = await fetchData.json();
-    console.log(res);
+   
 
     if (res?.error?.message) {
       output.innerHTML = "no location found";
